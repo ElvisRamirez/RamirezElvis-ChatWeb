@@ -1,11 +1,12 @@
-const login = document.querySelector("#login");
+const login = document.querySelector('#login');
 
-login.addEventListener("click", () => {
-  const user = document.querySelector("#username").value;
-  if (user != "") {
-    document.cookie = `username=${user}`;
-    document.location.href = "/";
+login.addEventListener('click', () => {
+  const user = document.querySelector('#username').value.trim();
+
+  if (user !== '') {
+    document.cookie = `username=${user}; path=/`;
+    window.location.href = '/';
   } else {
-    alert("Por favor ingresa tu nombre de usuario");
+    alert('Por favor ingresa tu nombre de usuario');
   }
 });

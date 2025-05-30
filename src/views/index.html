@@ -1,26 +1,49 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Web Chat</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/Chat.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Chat en Tiempo Real</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/Chat.css" />
 </head>
 <body>
-    <header>
-        <h1>Web Chat</h1>
-    </header>
-    <main>
-        <div id="all-messages">
-            
-        </div>
-        <div class="send-message">
-                <input type="text" id="message">
-                <button type="button" id="send-message" class="btn secondary">Enviar</button>
-            </div>
-    </main>
-    <script src="/socket.io/socket.io.js"></script>
-    <script src="js/script.js"></script>
+  <header>
+    <h1>Chat en Tiempo Real</h1>
+  </header>
+  <main style="display:flex; gap: 1rem;">
+    <aside id="user-panel" style="width: 200px; border-right: 1px solid #ccc; padding-right: 1rem;">
+      <h3>Usuarios conectados</h3>
+      <ul id="users-list" style="list-style:none; padding-left:0;"></ul>
+    </aside>
+  
+    <section id="chat-section" style="flex-grow: 1;">
+      <div id="all-messages" style="height:400px; overflow-y:auto; border:1px solid #ccc; padding:1rem;">
+        <!-- mensajes aquí -->
+      </div>
+      <div class="send-message" style="margin-top: 1rem;">
+        <input type="text" id="message" placeholder="Escribe tu mensaje...">
+        <button type="button" id="send-message" class="btn secondary">Enviar</button>
+      </div>
+    </section>
+  </main>
+  
+  
+
+  <script>
+    // Validar que exista la cookie username, si no redirigir a registro
+    const cookies = document.cookie.split('; ').reduce((acc, curr) => {
+      const [key, value] = curr.split('=');
+      acc[key] = value;
+      return acc;
+    }, {});
+
+    if (!cookies.username) {
+      window.location.href = '/register.html';
+    }
+  </script>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="js/script.js"></script>
 </body>
 </html>
