@@ -1,83 +1,78 @@
-# WebChat - Proyecto de Chat en Tiempo Real
-# Nombre:Elvis Alexander Ramirez Quishpe
+**Título del proyecto:** Chat en Tiempo Real con Socket.IO
 
-## Introducción
+**Nombre completo del estudiante:** Elvis Alexander Ramirez Quishpe
 
-WebChat es una aplicación de chat en tiempo real desarrollada como parte del curso de Socket.io. El objetivo principal es permitir la comunicación instantánea entre usuarios a través de una interfaz web moderna y sencilla, utilizando tecnologías como Node.js, Express y Socket.io.
+**Fecha de entrega:** 30 de mayo de 2025
 
-## Propósito
+**📘 Introducción** WebChat es una aplicación de chat en tiempo real desarrollada como parte del curso de Socket.IO. El objetivo principal es permitir la comunicación instantánea entre usuarios a través de una interfaz web moderna y sencilla, utilizando tecnologías como Node.js, Express y Socket.IO.
 
-El propósito de este proyecto es aprender y demostrar el uso de WebSockets para la comunicación bidireccional en tiempo real, así como la integración de middleware, manejo de sesiones y diseño responsivo con Bootstrap.
-**⚙️ Implementación del Proyecto**s
-📁 Estructura del código
-**El proyecto está compuesto por:**
+**✅ Requisitos del Proyecto Funcionalidades requeridas:** Comunicación en tiempo real entre múltiples usuarios.
 
-index.html: Interfaz principal del chat.
+Mostrar la lista de usuarios conectados.
 
-register.html: Página de registro para ingresar el nombre de usuario.
+Diseño moderno y responsivo del chat.
 
-js/script.js: Controla el envío y recepción de mensajes vía Socket.IO.
+**Herramientas y tecnologías utilizadas:** 
+Node.js
 
-js/register.js: Guarda el nombre de usuario en localStorage y redirige al chat.
+Express
 
-server.js: Archivo backend con Express y Socket.IO.
+Socket.IO
 
-css/style.css: Estilos generales.
+HTML/CSS
 
-css/Chat.css y css/register.css: Estilos específicos para cada vista.
+**Bootstrap Implementación del Proyecto Estructura del código:**
+**src/views/index.html** Interfaz principal del chat.
 
-**🎨 Mejoras al diseño**
-Se integró Bootstrap 5 para una mejor apariencia y responsividad.
+**src/views/register.html:** Página de registro para nuevos usuarios.
 
-Se añadieron Bootstrap Icons.
+**src/public/js/script.js:** Lógica del cliente para la comunicación en tiempo real.
 
-Se mejoró la estructura con el sistema de grid y flex de Bootstrap.
+**src/public/js/register.js:** Manejo del registro de usuarios.
 
-Se aplicaron márgenes, paddings y colores más modernos.
+**src/public/css/chat.css y style.css:** Estilos personalizados para el chat.
 
-## Instrucciones para ejecutar el proyecto localmente
+**src/realTimeServer.js:** Servidor principal que gestiona las conexiones de Socket.IO.
 
-1. **Clona el repositorio:**
-   ```sh
-   git clone https://github.com/paulosk8/webChat.git
-   cd webChat
- **Instala las dependencias:**
-   npm install
+**Funcionalidades implementadas:** Registro de usuarios con nombre de usuario único.
 
-**Ejecuta el servidor:**
+Envío y recepción de mensajes en tiempo real.
+La interfaz de registro de usuarios.
+![Descripción de la imagen](img/registro.png)
 
-El servidor estará disponible en http://localhost:3000.
+Visualización de la lista de usuarios conectados.
+![Descripción de la imagen](img/usuarios.png)
 
-**Accede a la aplicación:**
-
-Abre tu navegador y visita http://localhost:3000.
-Regístrate con un nombre de usuario para acceder al chat.
-**Mejoras al diseño y características adicionales**
-**Diseño Moderno:** Se implementó Bootstrap y Bootstrap Icons para una interfaz atractiva y responsiva.
-**Validación de Usuario:** Se utiliza un middleware para asegurar que solo usuarios registrados puedan acceder al chat.
-**Gestión de Sesiones:** El nombre de usuario se almacena en cookies para mantener la sesión activa.
-**Mensajería en Tiempo Real:** Integración completa con Socket.io para enviar y recibir mensajes instantáneamente.
-**Componentes Visuales Mejorados:** Uso de tarjetas, botones personalizados y estilos CSS para mejorar la experiencia de usuario.
-**Notificaciones de Error:** Al intentar ingresar sin nombre de usuario, se muestra una alerta amigable.
-
-Capturas de Funcionalidad
+El chat de desconeccion del usuario desaparece
+La interfaz de registro de usuarios.
+![Descripción de la imagen](img/desconetado.png)
 
 
-**Conclusiones**
-Este proyecto permitió comprender el funcionamiento de los WebSockets y su integración en aplicaciones web modernas. Se reforzaron conceptos de middleware, manejo de sesiones y diseño responsivo. Además, se mejoró la experiencia de usuario mediante la personalización de la interfaz y la validación de datos.
+La lista de usuarios conectados.
 
 
-## Conclusiones
 
-Este proyecto permitió comprender el funcionamiento de los WebSockets y su integración en aplicaciones web modernas. Se reforzaron conceptos de middleware, manejo de sesiones y diseño responsivo. Además, se mejoró la experiencia de usuario mediante la personalización de la interfaz y la validación de datos.
+**Instrucciones de Ejecución Clonar el repositorio:**
 
+ git clone https://github.com/ElvisRamirez/RamirezElvis-ChatWeb.git 
+ cd RamirezElvis-ChatWeb 
+**Instalar las dependencias:**
+
+ npm install 
+ **Iniciar el servidor:**
+ npm start
+ **Acceder a la aplicación:**
+
+Abre tu navegador y navega a http://localhost:3000 para utilizar el chat. 
+**💬 Conclusiones**
+Durante el desarrollo de este proyecto, se fortalecieron los conocimientos sobre aplicaciones en tiempo real y la utilización de WebSockets mediante Socket.IO. Se enfrentaron desafíos relacionados con la gestión de múltiples conexiones y la sincronización de mensajes, los cuales fueron superados mediante la implementación de eventos personalizados y el manejo adecuado del estado de los usuarios.
 ## Referencias
 
 - [Documentación de Socket.io](https://socket.io/docs/)
 - [Express.js](https://expressjs.com/)
 - [Bootstrap](https://getbootstrap.com/)
 - [Node.js](https://nodejs.org/)
-- [Repositorio del proyecto](https://github.com/paulosk8/webChat)
+- [Repositorio del proyecto](https://github.com/ElvisRamirez/RamirezElvis-ChatWeb)
 ```
 
 
