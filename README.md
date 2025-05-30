@@ -45,7 +45,7 @@ Visualización de la lista de usuarios conectados.
 
 El chat de desconeccion del usuario desaparece
 La interfaz de registro de usuarios.
-![Descripción de la imagen](src/public/img/desconetado.png)
+![Descripción de la imagen](src/public/img/desconectado.png)
 
 
 La lista de usuarios conectados.
