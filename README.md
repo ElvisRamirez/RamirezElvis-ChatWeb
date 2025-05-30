@@ -38,7 +38,7 @@ HTML/CSS
 
 Envío y recepción de mensajes en tiempo real.
 La interfaz de registro de usuarios.
-![Descripción de la imagen](src/img/registro.png)
+![Descripción de la imagen](public/src/img/registro.png)
 
 Visualización de la lista de usuarios conectados.
 ![Descripción de la imagen](src/img/usuarios.png)
