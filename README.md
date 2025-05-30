@@ -38,14 +38,14 @@ HTML/CSS
 
 Envío y recepción de mensajes en tiempo real.
 La interfaz de registro de usuarios.
-![Descripción de la imagen](img/registro.png)
+![Descripción de la imagen](src/img/registro.png)
 
 Visualización de la lista de usuarios conectados.
-![Descripción de la imagen](img/usuarios.png)
+![Descripción de la imagen](src/img/usuarios.png)
 
 El chat de desconeccion del usuario desaparece
 La interfaz de registro de usuarios.
-![Descripción de la imagen](img/desconetado.png)
+![Descripción de la imagen](src/img/desconetado.png)
 
 
 La lista de usuarios conectados.
